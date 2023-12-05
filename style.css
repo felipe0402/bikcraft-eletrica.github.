@@ -185,8 +185,31 @@ p {
     text-align: center;
   }
 }
+@media (max-width: 900px) {
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .header {
+    gap: 30px;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+  .introducao::before {
+    display: none;
+  }
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
 
-@media (max-width: 800px) {
+
+@media (max-width: 600px) {
   body {
     gap: 30px;
     margin-top: 20px;
